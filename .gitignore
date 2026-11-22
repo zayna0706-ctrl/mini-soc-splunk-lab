@@ -1,0 +1,44 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+passwords.conf
+authentication.conf
+
+# Splunk sensitive configuration
+**/passwords.conf
+**/authentication.conf
+**/server.conf
+
+# Logs and data
+*.log
+*.raw
+*.dump
+*.bak
+*.backup
+*.sqlite
+*.db
+
+# Backups
+backups/
+backup/
+Splunk-Backups/
+
+# OS and editor files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+*.temp

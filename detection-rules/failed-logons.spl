@@ -1,0 +1,4 @@
+index=main sourcetype="WinEventLog:Security" EventCode=4625
+| fillnull value="Unknown" Account_Name Workstation_Name Source_Network_Address
+| stats count by host Account_Name Workstation_Name Source_Network_Address
+| sort -count
